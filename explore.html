@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explore </title>
+
+    <link rel="stylesheet" type="text/css" href="engine14/style.css" />
+    <script type="text/javascript" src="engine14/jquery.js"></script>
+
+    <script src="js.js"></script>
+    <link rel="stylesheet" type="text/css" href="engine14/style.css" />
+    <script type="text/javascript" src="engine14/jquery.js"></script>
+    <link rel="stylesheet" href="style.css" >
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css"/>
+    <script type="text/javascript">
+        $(function($){
+            var addToAll = false;
+            var gallery = true;
+            var titlePosition = 'inside';
+            $(addToAll ? 'img' : 'img.fancybox').each(function(){
+                var $this = $(this);
+                var title = $this.attr('title');
+                var src = $this.attr('data-big') || $this.attr('src');
+                var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+                $this.wrap(a);
+            });
+            if (gallery)
+                $('a.fancybox').attr('rel', 'fancyboxgallery');
+            $('a.fancybox').fancybox({
+                titlePosition: titlePosition
+            });
+        });
+        $.noConflict();
+    </script>
+</head>
+<body>
+
+<header>
+
+</header>
+<br>
+
+
+
+<div class="content">
+
+
+
+
+    <aside>
+
+        <nav >
+
+            <a href="index.html"> <img class="menuitem" src="img/menu8.png" alt="Home" > </a>
+            <a href="hotels.html">  <img class="menuitem" src="img/menu3.png" alt="Hotels" > </a>
+            <a href="eating_out.html"> <img class="menuitem" src="img/menu6.png" alt="Eating out" > </a>
+
+            <div class="dropdown">
+                <span>
+                   <img class="menuitem" src="img/menusss.png" alt="Explore">
+                </span>
+                <div class="dropdown-content" >
+                    <a href="landmarks.html"> <img class="menuitem" src="img/menu0.png" alt="City centre"> </a>
+                    <a href="temples.html">  <img class="menuitem" src="img/menu2.png" alt = "Temples"> </a>
+                    <a href="theaters.html"> <img class="menuitem" src="img/menu4.png" alt="Theaters" > </a>
+                    <a href="museums.html">  <img class="menuitem" src="img/menu1.png" alt="Museums" > </a>
+                    <a href="nature.html"> <img class="menuitem" src="img/menu7.png" alt="Outings"> </a>
+                    <a href="shopping.html"> <img class="menuitem" src="img/menu5.png" alt="Shopping" > </a>
+                </div>
+            </div>
+
+
+        </nav>
+        <!-- weather widget start --><a target="_blank" href="http://www.booked.net/weather/skopje-3000">
+        <img class="weather" src="https://w.bookcdn.com/weather/picture/4_3000_1_1_3c3b3b_200_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=w
+        209&anc_id=36854"  alt="booked.net"/></a><!-- weather widget end -->
+</aside>
+
+
+
+    <section class="txt2">
+
+        <p class="info center">
+            The most popular tourist walk starts from the Old Railway Station down Macedonia Street, past the Mother Teresa Memorial House
+            and Feudal Tower,  down Macedonia Square, across the Stone Bridge, past the Holocaust Museum,
+            Museum of Macedonian Independence, towards the Turkish Bazaar and ending at the Kale Fortress. The reconstructed Old Theater and the
+            new Archaeological Museum add additional cultural landmarks along the main tourist vertical.</p>
+        <div>
+            <a href="landmarks.html">  <div id="wowslider-container1">
+                <div class="ws_images"><ul>
+                    <li><img src="data14/images/1.jpg" alt="1" title="1" id="wows1_0"/></li>
+                    <li><img src="data14/images/2.jpg" alt="2" title="2" id="wows1_1"/></li>
+                    <li><img src="data14/images/3.jpg"   alt="3" title="3" id="wows1_2"/></li>
+                    <li><img src="data14/images/4.jpg" alt="4" title="4" id="wows1_3"/></li>
+                </ul></div>
+                <div class="ws_bullets"><div>
+                    <a href="#" title="1"><span><img src="data14/tooltips/1.jpg" alt="1"/>1</span></a>
+                    <a href="#" title="2"><span><img src="data14/tooltips/2.jpg" alt="2"/>2</span></a>
+                    <a href="#" title="3"><span><img onclick="openCity(event, 'kale')" src="data14/tooltips/3.jpg" alt="3"/>3</span></a>
+                    <a href="#" title="4"><span><img src="data14/tooltips/4.jpg" alt="4"/>4</span></a>
+                </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">bootstrap carousel</a> by WOWSlider.com v8.7</div>
+                <div class="ws_shadow"></div>
+            </div> </a>
+            <script type="text/javascript" src="engine14/wowslider.js"></script>
+            <script type="text/javascript" src="engine14/script.js"></script>
+        </div>
+
+<p class="info center">
+
+    For the last several years the city centre has seen a major transformation and now one can spend an entire day and still not
+    manage to see everything. From the Triumphal Gate to the giant statue of Alexander the Great, the numerous museums
+    surrounding the area and the old stone bridge, the cultural offering is simply immense. The area is buzzing with nightlife as well,
+    with many of the city's most attractive bars, coffee shops and restaurants beeing located on the Macedonia street.
+    Shopoholics will have their hands full as well as there are plenty of shops to choose from with two of the biggest shopping malls
+    within a 5 minute walk.
+ There is plenty to see and do. If this is your first time visiting Skopje,
+    you might want to join one of the organized tours or hire a local tour guide to show you around. <br>
+    ...or if you are too lazy to do any of that, stay in and browse the city through Google Street view ;). <br> <br>
+</p>
+
+        <script>
+
+            window.onload = initialize_property_map;
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+        <div id="property_map"></div>
+        <div id="pano"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <p class="titles"> <b> T R A N S P O R T</b> </p>
+        <hr> <br>
+<p class="titles left"> By plane </p>
+
+
+<p class="indent info">
+    Skopje has an international airport, Skopje "Alexander the Great" Airport. It is located in Petrovec, some 20 kilometres (12 miles) east of the city.
+    Skopje airport has connections to several European cities, including Vienna, Zürich, Brussels, Istanbul, London and Rome. It also maintains a direct connection with Dubai. <br>
+    To travel between the airport and the city centre: <br>
+           - Vardar Ekspres operates buses between the airport and the city center. The journey takes approximately 30 minutes and costs MKD 175.
+            The bus stops at the International Bus Station and the Holiday
+            Inn hotel. Buses leave the airport every day at 01:00; 02:50; 04:30; 09:00; 10:30; 13:30; 15:50; 18:30;
+            and 20:30. <br>
+            - Taxi service is regulated. Airport taxi is the only licensed taxi operator from the airport. The fare to the center is approximately MKD 1,200.
+</p>
+        <p class="titles left"> By bus </p>
+        <p class="info indent">
+             <a href="http://www.sas.com.mk/"> <u> - Skopje Avtobuska Stanica</u></a> , the intercity bus station, is adjacent to the
+            train station, 2km southeast of the city centre. Left luggage facilities are available.<br>
+
+            - Skopje has a vast, frequent and efficient bus network. Public buses (red in color) cost 35 MKD if you pay the driver, or 30 MKD if you buy
+        your ticket in advance from a kiosk. Private buses (all the other colors) cost 25 MKD (you pay the driver directly).
+        The new double deck buses may feature English translations to routes, but it's easier just to stick to the bus numbers.
+        Bus maps can be found on almost all bus station, or on <a href="http://jsp.com.mk"> <u> the official site.</u></a></p>
+
+        <p class="titles left"> By taxi </p>
+
+        <p class="info indent">The top taxi companies according to Balkan Viator are the following: <br>
+            - Bel Mercedes Taxi, Phone: +389 2 15183<br>
+            - City Taxi, Phone: +389 2 15183<br>
+            - Classic Taxi, Phone: +389 2 15183<br>
+            - De Luxe Taxi, Phone: 	+389 2 15187<br>
+            - Ellite Taxi, Phone: +389 2 15169<br>
+
+
+
+
+
+
+        <p class="titles"> <b> T O U R S</b> </p>
+        <hr> <br>
+
+
+<span class="museum" >
+    <span class="museumtitle"> Half-day tour of Skopje’s Surrounding Beauties  </span>
+
+    <a class="fancybox" href="img/explore/tour1.jpg"> <img src="img/explore/tour1.jpg" class="museumimg" > </a>
+    <span class="museump">
+<p class="price">
+          Price: €25 per person. <br>
+        Duration: 4 hours <br>
+ </p>
+            Enjoy a panoramic view over Skopje from the Millennium Cross<br>
+Witness the frescoes that are among the highest achievements in existing Byzantine art at St. Pantelejmon <br>
+Visit the canyon Matka, one of the most popular outdoors destinations <br>
+      <a href="https://www.getyourguide.com/skopje-l2398/half-day-tour-of-skopje-s-surrounding-beauties-t79310/?
+    referrer_view_id=ac5b96cf221e3ad2c9472c4ac23f913a&referrer_view_position=0#booking-assistant">
+        <p class="book" > BOOK NOW </p>
+    </a>
+    </span>
+
+ </span>
+
+        <span class="museum" >
+    <span class="museumtitle"> Full-day tour: <br> Best of Skopje  </span>
+
+    <a class="fancybox" href="img/explore/tour2.jpg"> <img src="img/explore/tour2.jpg" class="museumimg" > </a>
+    <span class="museump">
+<p class="price">
+          Price: €36 per person. <br>
+        Duration: 6 hours <br>
+ </p>
+           If you simply want to see the best and most important parts of Skopje, the highlights of the city and its
+        surrounding Millennium Cross and canyon Matka, then this tour is for you.
+        Walk and be transported through the city. <br>
+        <a href="https://www.freetour.com/skopje/full-day-tour-best-of-skopje">
+        <p class="book" > BOOK NOW </p> </a>
+    </span>
+
+ </span>
+
+
+        <span class="museum" >
+    <span class="museumtitle"> Matka Canyon <br>  Sightseeing Tour  </span>
+
+    <a class="fancybox" href="img/explore/tour3.jpg"> <img src="img/explore/tour3.jpg" class="museumimg" > </a>
+    <span class="museump">
+<p class="price">
+          Price: €50 per person. <br>
+        Duration: 6 hours <br>
+ </p>
+           Explore the magnificent scenery of Matka, the most breathtaking landscape around.
+        Cruise by a small boat past the vertical rocks.
+Hike through forests filled with scents of flowers and sounds of birds. Look out for medieval monasteries.  <br>
+        <a href="https://www.getyourguide.com/skopje-region-l2397/skopje-matka-tour-t31583/?referrer_view_id=48d27570bf209c0abeb6a35fe6384da3&r
+     eferrer_view_position=4#booking-assistant">
+        <p class="book" > BOOK NOW </p> </a>
+    </span>
+
+ </span>
+<br><br>
+
+        <span class="museum" >
+    <span class="museumtitle"> Private Tour with a Local  </span>
+
+    <a class="fancybox" href="img/explore/tour4.jpg"> <img src="img/explore/tour4.jpg" class="museumimg" > </a>
+    <span class="museump">
+<p class="price">
+          Price: €30 per person. <br>
+        Duration: 2-4 hours <br>
+ </p>
+          Explore the city with a friendly and passionate local who will help you discover the city like a real resident. <br>
+        <a href="https://www.getyourguide.com/skopje-l2398/skopje-private-tour-with-a-local-t104072/?referrer_view_id=48d27570bf209c0
+        abeb6a35fe6384da3&referrer_view_position=12#booking-assistant">
+        <p class="book" > BOOK NOW </p> </a>
+    </span>
+
+ </span>
+
+        <span class="museum" >
+    <span class="museumtitle"> Half-Day Stobi Wine Tour  </span>
+
+    <a class="fancybox" href="img/explore/tour5.jpg"> <img src="img/explore/tour5.jpg" class="museumimg" > </a>
+    <span class="museump">
+<p class="price">
+          Price: €45 per person. <br>
+        Duration: 6 hours <br>
+ </p>
+      Experience a wine tasting in one of the best wineries in Macedonia with lunch. <br>
+        <a href="https://www.getyourguide.com/skopje-l2398/skopje-half-day-stobi-wine-tour-t76984/?referrer_view_id=48d27570
+        bf209c0abeb6a35fe6384da3&referrer_view_position=13#booking-assistant">
+        <p class="book" > BOOK NOW </p> </a>
+    </span>
+
+ </span>
+
+        <span class="museum" >
+    <span class="museumtitle"> Vodno Night Hiking with a Local </span>
+
+    <a class="fancybox" href="img/explore/tour6.jpg"> <img src="img/explore/tour6.jpg" class="museumimg" > </a>
+    <span class="museump">
+<p class="price">
+          Price: €47 per person. <br>
+        Duration: 4.5 hours <br>
+ </p>
+           See the city lights with a nightime hike up Vodno, celebrate reaching the summit with a beer and a bite. <br>
+        <a href="https://www.getyourguide.com/skopje-l2398/skopje-vodno-night-hiking-tour-with-a-local-guide-t80367/?referrer_vie
+        w_id=48d27570bf209c0abeb6a35fe6384da3&referrer_view_position=9#booking-assistant">
+        <p class="book" > BOOK NOW </p> </a>
+    </span>
+
+ </span>
+
+
+
+</section>
+
+
+</body>
+</html>

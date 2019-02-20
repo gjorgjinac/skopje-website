@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nature</title>
+
+    <link rel="stylesheet" href="style.css" >
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css"/>
+    <script type="text/javascript">
+        $(function($){
+            var addToAll = false;
+            var gallery = true;
+            var titlePosition = 'inside';
+            $(addToAll ? 'img' : 'img.fancybox').each(function(){
+                var $this = $(this);
+                var title = $this.attr('title');
+                var src = $this.attr('data-big') || $this.attr('src');
+                var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+                $this.wrap(a);
+            });
+            if (gallery)
+                $('a.fancybox').attr('rel', 'fancyboxgallery');
+            $('a.fancybox').fancybox({
+                titlePosition: titlePosition
+            });
+        });
+        $.noConflict();
+    </script>
+
+</head>
+
+<body>
+
+
+<header>
+
+</header>
+<br>
+
+<div class="content">
+
+
+
+
+    <aside>
+
+        <nav >
+
+            <a href="index.html"> <img class="menuitem" src="img/menu8.png" alt="Home"> </a>
+            <a href="hotels.html">  <img class="menuitem" src="img/menu3.png" alt="Hotels"> </a>
+            <a href="eating_out.html"> <img class="menuitem" src="img/menu6.png" alt="Eating out" > </a>
+
+            <div class="dropdown">
+                <span>
+                    <a href="explore.html">    <img class="menuitem" src="img/menussss.png" alt="Explore" > </a>
+                </span>
+                <div class="dropdown-content">
+                    <a href="landmarks.html"> <img class="menuitem" src="img/menu0.png" alt="City centre"> </a>
+                    <a href="temples.html">  <img class="menuitem" src="img/menu2.png" alt = "Temples"> </a>
+                    <a href="theaters.html"> <img class="menuitem" src="img/menu4.png" alt="Theaters" > </a>
+                    <a href="museums.html">  <img class="menuitem" src="img/menu1.png" alt="Museums" > </a>
+                    <img class="menuitem" src="img/menu77.png" alt="Outings">
+                    <a href="shopping.html"> <img class="menuitem" src="img/menu5.png" alt="Shopping" > </a>
+                </div>
+            </div>
+
+
+
+
+        </nav>
+        <!-- weather widget start --><a target="_blank" href="http://www.booked.net/weather/skopje-3000">
+        <img class="weather" src="https://w.bookcdn.com/weather/picture/4_3000_1_1_3c3b3b_200_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=w
+        209&anc_id=36854"  alt="booked.net"/></a><!-- weather widget end -->
+    </aside>
+
+
+
+    <section class="txt2">
+
+        <div id="parkzoo" class="tabcontent">
+            <div id="park"  >
+            <div class="halfn">
+                <p class="titled" >City Park </p>
+                This park has been constructed during the time of Afuz Mehmed Pasha who was governor of Skopje, in the surroundings of the
+                Craftmanship School, soon after the school's construction. One part of this
+                original lot of the park exists today and is located in the vicinity of the Kermes Restaurant. It covers a surface of 486,000 m2,
+                along the street Leninova in the east, Blvd. “Oktomvriska Revolucija” in the west, the Vardar River in the north and Blvd.
+                “Ilinden” in the south. The City park area is characterized by very rare and high quality plants. The vegetation consists
+                primarily of varieties originating from the Southern European Mediterranean region, but other varieties from all over the
+                world can also be found.
+            </div>
+            <div class="halfn">
+
+            </div>
+            </div>
+            <video class="naturevid" poster="img/nature/111.jpg" controls>
+
+                <source src="vid/park.mp4" type="video/mp4"></source>
+            </video>
+
+
+
+        <div id="zoo1">
+            <div class="halfn">
+            </div>
+            <div class="halfn">
+                <p class="titled" >Skopje Zoo </p>
+                The Skopje Zoo is a 12-hectare zoo located in the city park. It is home to about 300 animals representing around
+                85 species. In 2008 the City allocated Denar 42 million in funds to improve the zoo, and the zoo started working with the
+                European Association of Zoos and Aquaria (EAZA) to improve conditions and bring the zoo up to modern standards. By 2010,
+                18 new enclosures had been built and 85% of the older exhibits at the zoo had been renovated.
+            </div>
+        </div>
+
+        <div>
+
+            <video class="naturevid" poster="img/nature/11.jpg" controls >
+
+                <source src="vid/zoo.mp4" type="video/mp4" ></source>
+            </video>
+
+
+        </div> </div>
+
+
+        <div id="vodno"  class="tabcontent">
+
+
+
+            <p class="titles" > <br>Mount Vodno </p> <br>
+            <a class="fancybox" href="img/nature/vv1.jpg"><img src="img/nature/vv1.jpg" class="vodnoimg" /> </a>
+            <a class="fancybox" href="img/nature/vv2.jpg"><img src="img/nature/vv2.jpg" class="vodnoimg" /> </a>
+            <a class="fancybox" href="img/nature/vv3.jpg"><img src="img/nature/vv3.jpg" class="vodnoimg" /> </a>
+
+            <p class="info">   For those who seek a little more adventure and outdoor activities, hiking or biking, limits are nonexistent
+            in the forest of the Vodno Mountain. The Millennium Cross,
+            built as a memorial to 2000 years of Christianity, is situated right at the „Krstovar“ peek, the highest point of the
+            mountain. It is a 66-meter high and is actually the fourth tallest in the world. The construction began in 2002 and was funded by the Macedonian Orthodox Church,
+            the Macedonian government and donations from Macedonians from all over the world. On 8 September 2008, the independence
+            day of the Republic of Macedonia, an elevator was installed inside the cross. In 2009, a restaurant and a souvenir shop
+            were opened next to the cross. In 2011 the Millennium Cross ropeway was opened. The ropeway is three and a half km long.
+            At night the cross shines down over the city, but during the day you can see it up close. It is located at the top of Vodno
+             Mountain, overlooking Skopje’s city center. You can reach the cross by either a very strenuous hike, or by taking a bus
+             to the middle of the mountain and then continue by cable car.
+
+
+
+
+             <br><br>
+
+            </p>
+
+
+
+    </div>
+
+
+
+        <div id="matka"  class="tabcontent">
+            <video autoplay  muted>
+
+                <source src="vid/matkacropped.mp4" type="video/mp4"></source>
+            </video>
+
+
+
+            <div id="videoDiv">
+
+
+                    <video preload="preload" id="video" autoplay="autoplay" loop="loop" muted>
+
+                        <source src="vid/matkacropped.mp4" type="video/mp4"></source>
+                    </video>
+
+                    <div id="videoMessage">
+                        <p class="titled" >Canyon Matka </p>
+
+
+                       Covering roughly 5,000 hectares, Matka is one of the
+                        most popular outdoor
+                        destinations in Macedonia and is home to several medieval monasteries.
+                        The Matka Lake within the Matka Canyon is the oldest artificial
+                        lake in the country.Due in large part to its proximity to Skopje, Matka Canyon is a popular destination for citizens
+                        and tourists.
+                      . Kayaking on the
+                        Treska River is a popular activity, as are fishing, hunting, hiking, climbing and swimming.
+
+                    </div>
+
+            </div>
+            <video autoplay  muted>
+
+                <source src="vid/matkacropped.mp4" type="video/mp4"></source>
+            </video>
+<br>
+            <p class="titles"> Vrelo Cave </p>
+            <p class="info center" > Located on the right bank of the Treska River, the cave was listed as one of the top 77 natural sites in the world in the New7Wonders of Nature project.
+
+                Vrelo Cave has many stalactites including a large one in the middle of the cave is known as the "Pine Cone" due to its shape. There are two lakes at the end of the cave, with one larger than the other. The smaller lake is 8 metres (26.2 feet) at its longest length and 15 metres (49.2 feet) in depth at its deepest point. The larger lake is 35 metres (114.8 feet) at its longest length, and 18 metres (59 feet) at its deepest point.Though the exact depth of the cave is unknown, some speculate that it could be the deepest underwater cave in the world.
+            </p>
+
+            <br>
+            <div>
+                <video controls class="matkav" poster="img/nature/m2.jpg">
+                    <source src="vid/Matkac.mp4" type="video/mp4">
+                </video>
+                <video controls class="matkav" poster="img/nature/m1.jpg" >
+                    <source src="vid/vrelo.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,904 @@
+body, html
+{
+    width: 1024px;
+
+    background-color: #3c3b3b;
+    font-family: "Calibri";
+
+    margin-left:auto;
+    margin-right:auto;
+}
+.header
+{
+    height: 100px;
+    width:100%;
+    background-color: #3c3b3b;
+    font-size: 80px;
+}
+
+
+header
+{   background-image: url("img/slider/3.jpg");
+    height: 250px;
+
+}
+
+
+.txt1
+ {   display: inline-block;
+     background-color: #c5bebe;
+     width: 809px;
+     margin-left:15px;
+     float:left;
+     overflow: hidden;
+ }
+
+.txt2
+{   display: inline-block;
+    background-color: #3c3b3b;
+    width: 809px;
+    margin-left:15px;
+    float:left;
+    overflow: hidden;
+}
+
+aside
+  {   float:left;
+      width: 200px;
+      background-color: #3c3b3b;
+
+  }
+
+nav
+{
+
+}
+
+.navgap
+{   display: inline-block;
+    height:500px;
+    float:left;
+    width: 200px;
+    background-color: #3c3b3b;
+}
+#property_map {
+    height: 380px;
+    width: 50%;
+    float: left;
+    margin-bottom: 30px;
+}
+#pano {
+    height: 380px;
+    width: 50%;
+    margin-bottom:30px;
+}
+
+#wowslider-container0
+{   width:80%;}
+
+.indexvideo
+{   width:809px;
+
+    display: block;
+    margin-top:15px;
+}
+
+
+.menuitem
+{width:100%;
+margin: -2px;
+}
+
+.hotel
+{display: inline-block;
+    width: 260px;
+    margin-left:4px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+.stars
+{
+    width: 100px;
+    margin:auto;
+}
+index1
+.hotelimg
+{
+    margin: 0px;
+    padding: 0px;
+}
+#movies
+{
+    color: #ffab0b;
+    text-shadow: black;
+    background-color: #3c3b3b;
+
+}
+button
+{width: 809px;
+    height: 30px;
+    font-size:20px;
+
+}
+.indexslika
+{
+    width: 809px;
+}
+.white
+{
+    height: 200px;
+    background-color: white;
+}
+.indexed
+{
+    background-color: white;
+    font-weight: 100;
+    font-size: 16px;
+margin-bottom: 10px;
+    padding: 20px;
+    display: block;
+}
+.vodnoimg
+{
+    width: 267px;
+}
+.titles
+{
+    font-size: 20px;
+    text-align: center;
+    color:#ffab0b;
+
+}
+.cinema, .museum
+ {display: inline-block;
+     width: 267px;
+
+    text-align: center;
+
+
+ }
+.bazaarvid
+{
+    width:400px;
+}
+.indexxx
+{display: inline-block;
+    width: 267px;
+    margin:0,5 px;
+    text-align: center;
+    height: 150px;
+    padding: 2px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+
+.indexx
+{display: inline-block;
+    width: 267px;
+margin:0,5 px;
+    text-align: center;
+height: 170px;
+padding: 2px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.bold
+{
+    font-weight: bold;
+
+}
+
+.black
+{
+    color:black;
+}
+.indexp
+{
+    font-weight: 100;
+    font-size: 16px;
+    margin-top: 10px;
+}
+#index2
+{
+    background-image: url("img/index2.jpg");
+}
+
+#index3
+{
+    background-image: url("img/index3.jpg");
+}
+
+#index1
+{
+    background-image: url("img/index1.jpg");
+}
+
+#index4
+{
+    background-image: url("img/index4.jpg");
+}
+
+#index5
+{
+    background-image: url("img/index5.jpg");
+}
+
+#index6
+{
+    background-image: url("img/index6.jpg");
+}
+.cinemaimg, .museumimg {
+    width: 96%;
+    margin: 0% 2% 0% 2%;
+
+}
+
+.museumtitle {
+       width: 96%;
+    margin: 0% 2% 0% 2%;
+    color:#ffab0b;
+    font-size: 20px;
+
+   }
+.museump{
+    text-align: left;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #c5bebe;
+    width: 96%;
+    margin: 0% 2% 0% 2%;
+    padding: 3%;
+    color:  black;
+
+}
+.hotelinfo
+{
+    font-size: 16px;
+    font-weight: normal;
+}
+.cinemamap
+{
+    width: 95%;
+    height: 100px;
+    margin-left: 3%;
+    margin-right: 2%;
+}
+
+
+
+
+.titled
+{color:#ffab0b;
+    font-size: 20px;
+margin-top: 40px;
+
+
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.gallery {
+    width: 390px;
+    background-color: #c5bebe;
+    padding: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    float: left;
+    margin-right:4px;
+    margin-left: 3px;
+}
+.food{
+    padding: 10px;
+}
+.gallery > div {
+    position: relative;
+    float: left;
+    padding: 4px;
+}
+
+.gallery > div > img {
+    display: block;
+    width: 120px;
+    transition: .1s transform;
+    transform: translateZ(0); /* hack */
+
+}
+
+.gallery > div:hover {
+    z-index: 1;
+}
+
+.gallery > div:hover > img {
+    transform: scale(1.7,1.7);
+    transition: .3s transform;
+}
+
+
+
+
+.rowgallery {
+    width: 809px;
+    background-color: #3c3b3b;
+
+
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    float: left;
+
+
+
+}
+
+.rowgallery > div {
+    position: relative;
+    float: left;
+    padding-right: 4.3px;
+}
+
+.rowgallery > div > img {
+    display: block;
+    width: 157.5px;
+    transition: .1s transform;
+    transform: translateZ(0); /* hack */
+
+}
+
+.rowgallery > div:hover {
+    z-index: 1;
+}
+
+.rowgallery > div:hover > img {
+    transform: scale(1.7,1.7);
+    transition: .3s transform;
+}
+
+.cc:before, .cf:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.cc:after {
+    clear: both;
+}
+.gallerys {
+    width: 809px;
+    background-color: #3c3b3b;
+    padding: 4px;
+
+
+    float: left;
+    margin-left:6px;
+
+}
+
+
+
+.gallerys > div {
+    position: relative;
+    float: left;
+    padding: 2px;
+}
+
+.gallerys > div > a > img {
+    display: block;
+    width: 110px;
+    transition: .1s transform;
+    transform: translateZ(0); /* hack */
+
+}
+
+.gallerys > div:hover {
+    z-index: 1;
+}
+
+.gallerys > div:hover > a>img {
+    transform: scale(1.7,1.7);
+    transition: .3s transform;
+}
+.shop:before, .shop:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.shop:after {
+    clear: both;
+}
+
+.puppetimg {
+    width: 197px;
+}
+
+
+.eating_out_txt
+{
+    width: 490px;
+    float:left;
+    border: double;
+
+
+}
+.browsebyfood
+{
+    text-align: center;
+}
+.browsebyfoodimg
+{  display: inline;
+    width:240px;
+    height: 100px;
+
+    margin-right: 0px;
+    margin-left: 3px;
+    padding: 0px;
+}
+#myDIV3, #myDIV4
+{
+    display: block;
+}
+.eating_out_title
+{
+    font-size: larger;
+font-weight: 300;
+}
+.tablinks
+{
+    display: inline;
+    width:192px;
+    height: 40px;
+    font-size: 20px;
+    margin-right: 0px;
+    margin-left: 3px;
+    padding: 0px;
+    text-shadow: white;
+}
+
+.tablinks1
+{
+    display: inline;
+    width:147px;
+    height: 40px;
+    font-size: 20px;
+    margin-right: 0px;
+    margin-left: 3px;
+    padding: 0px;
+    text-shadow: white;
+}
+
+#fastfoodpizza
+{
+    width: 200px;
+}
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+
+div.tab button.active {
+    background-color: #ccc;
+}
+.shoppingcentreimg
+{height: 70px;
+float: left;}
+
+.shoppingcentre
+{
+    width: 455px;
+    display: inline-block;
+text-align: right;
+
+}
+
+.shopname
+{margin-left: 13px;
+    width: 335px;
+    display: inline-block;
+    font-size: 20px;
+    color: #ffab0b;
+
+}
+
+.sidebarmap
+{
+    width: 192px;
+    height: 300px;
+}
+
+.weather
+{
+    width:192px;
+}
+#mnttour
+{width: 100%;
+height: 400px;}
+#cinemamap
+{
+    width:200px;
+    height:200px;
+}
+#balerina
+{height: 600px;
+    background-image: url("img/theatre/back.jpg");
+}
+.half
+{
+    display: inline-block;
+    width:48%;
+    text-align: center;
+    margin-top: 90px;
+    color:white;
+margin-bottom: 200px;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.balletvidcontainer
+{display: block;
+    height: 400px;
+
+background-color: #3c3b3b;
+}
+.balletvidcontainer video
+{  display: inline-block;
+   width:400px;
+margin:0;
+
+}
+.cinemainfo
+{
+    font-size: 16px;
+    font-weight: normal;
+    color:#ebebeb;
+}
+.theatreinfo
+{
+    color:#ebebeb;;
+    text-align: center;
+}
+
+.kaletxt
+{
+    color:#ebebeb;
+    text-align: center;
+    display: inline-block;
+    margin: 8px;
+    width: 310px;
+}
+
+.center
+{text-align: center;}
+
+.mnt
+{
+    color:#ffab0b;
+    font-size: 20px;
+    text-align: center;
+}
+.desc
+{
+    color:#ebebeb;
+    text-align: center;
+    font-style: italic;
+    font-size:12px;
+
+}
+
+.deschalf
+{   display: inline-block;
+    width:49%;
+    color:#ebebeb;
+    text-align: center;
+    font-style: italic;
+    font-size:12px;
+margin:0; padding: 0;
+}
+
+.mntimg
+{
+    width: 49%;
+
+}
+
+.boundary
+{
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 20px;
+    margin-top:20px;
+    color:black;
+
+}
+.matkavid
+{width: 809px;}
+
+
+
+
+@media only screen and (min-width : 809px) {
+    #video{display:block}
+    #videosubstitute{display:none}
+}
+#videoDiv {width: 100%; height: 200px; position: relative; }
+
+#video{width: 100%; opacity: 0.2; }
+
+#videoMessage {text-shadow: 2px 2px 2px #000000; color:white;
+ font-size: 18px;text-align: center;
+    margin-left:50px; margin-right: 50px;position: absolute; top: 0;  display: block; width: 700px;
+}
+
+
+
+
+.txt3{background-color:  #3c3b3b;
+    display: inline-block;
+
+    width: 809px;
+    margin-left:15px;
+    float:left;
+    overflow: hidden;
+}
+
+
+#zoo
+{display: block;
+    height: 325px;
+
+}
+
+#zoo1
+{display: block;
+    height: 325px;
+    background-image: url("img/nature/back.jpg");
+}
+.halfn
+{
+    display: inline-block;
+    width:48%;
+    text-align: center;
+    margin-top: 10px;
+    color:white;
+
+}
+#park
+{display: block;
+    height: 350px;
+    background-image: url("img/nature/BACK1.jpg");
+
+
+}
+.naturevid
+{
+width: 809px;
+}
+
+.matkav {
+    width: 49%;
+}
+
+
+.info
+
+ {
+     color: #ebebeb;
+
+ }
+
+
+
+.msquare
+{
+    display: block;
+    width: 809px;
+height: 350px;
+    background-image: url("img/landmarks/square.jpg");
+}
+.msquaretxt
+{width: 400px;
+    color: #ebebeb;
+    padding: 20px;
+    background-color: #3c3b3b;
+
+    margin-left: 190px;
+    margin-top: 110px;
+
+}
+
+.kalef
+{
+    display: block;
+    width: 809px;
+    height: 330px;
+    background-image: url("img/landmarks/kale.jpg");
+}
+.kaleftxt
+{width: 400px;
+    color: #ebebeb;
+    margin-top:120px;
+    background-color: #3c3b3b;
+    margin-left: 200px;
+    padding: 20px;
+
+}
+.kaleslika
+{
+    width:230px;
+    display: inline;
+    margin-right: 5px;
+
+}
+
+
+
+.kalevid
+{
+
+    margin-top: 8px;
+}
+
+.bazaar
+{
+    display: block;
+    width: 809px;
+    height: 330px;
+    background-image: url("img/landmarks/bazaar.jpg");
+}
+.bazaartxt
+{width: 400px;
+    color: #ebebeb;
+
+    background-color: #3c3b3b;
+
+    margin-left: 190px;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.aq
+{
+    height:490px;
+background-image: url("img/landmarks/aq1.jpg");
+}
+
+.aqinfo
+{
+    color: #ebebeb;
+
+    width: 650px;
+    background-color: #3c3b3b;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("img/landmarks/view.jpg");
+
+    /* Set a specific height */
+    min-height: 200px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1 {
+    /* The image used */
+    background-image: url("img/landmarks/aq1.jpg");
+
+    /* Set a specific height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("img/nature/v1.jpg");
+
+    /* Set a specific height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vodno
+{
+    width:49%;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3c3b3b;
+    min-width: 130px;
+
+
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+
+}
+#street-view {
+    height: 300px;
+}
+
+.book
+{
+    color: #ebebeb;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    background-color: #3c3b3b;
+    margin-top: 10px;
+}
+
+.price
+{ font-weight: bold;
+text-align: center;
+
+}
+.indent
+{
+    margin-left:30px;
+}
+.left{
+    text-align: left;
+}
+
+a{
+    color: inherit;
+    text-decoration: underline;
+}

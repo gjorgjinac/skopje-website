@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landmarks</title>
+    <link rel="stylesheet" type="text/css" href="engine14/style.css" />
+    <script type="text/javascript" src="engine14/jquery.js"></script>
+    <script src="js.js"></script>
+
+    <link rel="stylesheet" href="style.css" >
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css"/>
+
+</head>
+<body>
+
+
+<header>
+
+</header>
+<br>
+
+<div class="content">
+
+
+
+
+    <aside>
+
+        <nav >
+
+            <a href="index.html"> <img class="menuitem" src="img/menu8.png" alt="Home"> </a>
+            <a href="hotels.html">  <img class="menuitem" src="img/menu3.png" alt="Hotels"> </a>
+            <a href="eating_out.html"> <img class="menuitem" src="img/menu6.png" alt="Eating out" > </a>
+
+            <div class="dropdown">
+                <span>
+                    <a href="explore.html">    <img class="menuitem" src="img/menussss.png" alt="Explore" > </a>
+                </span>
+                <div class="dropdown-content">
+                  <img class="menuitem" src="img/menu00.png" alt="City centre">
+                    <a href="temples.html">  <img class="menuitem" src="img/menu2.png" alt = "Temples"> </a>
+                    <a href="theaters.html"> <img class="menuitem" src="img/menu4.png" alt="Theaters" > </a>
+                    <a href="museums.html">  <img class="menuitem" src="img/menu1.png" alt="Museums" > </a>
+                    <a href="nature.html"> <img class="menuitem" src="img/menu7.png" alt="Outings"> </a>
+                    <a href="shopping.html"> <img class="menuitem" src="img/menu5.png" alt="Shopping" > </a>
+                </div>
+            </div>
+
+
+
+
+        </nav>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1V9Qabp5A0RYFRNRpRmvAVJ8jhEU" class="sidebarmap"></iframe>
+
+        <!-- weather widget start --><a target="_blank" href="http://www.booked.net/weather/skopje-3000">
+        <img class="weather" src="https://w.bookcdn.com/weather/picture/4_3000_1_1_3c3b3b_200_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=w
+        209&anc_id=36854"  alt="booked.net"/></a><!-- weather widget end -->
+
+
+    </aside>
+
+    <section class="txt2">
+
+        <div class="tab">
+            <a href="" >   <button class="tablinks"  >  All</button></a>
+            <button class="tablinks" onclick="openCity(event, 'square')"> Macedonia Square</button>
+            <button class="tablinks"  onclick="openCity(event, 'bazaar')">The Old Town</button>
+            <button class="tablinks" onclick="openCity(event, 'kale')">Historical Heritage</button>
+
+
+
+        </div>
+
+        <script type="text/javascript">
+            $(function($){
+                var addToAll = false;
+                var gallery = true;
+                var titlePosition = 'inside';
+                $(addToAll ? 'img' : 'img.fancybox').each(function(){
+                    var $this = $(this);
+                    var title = $this.attr('title');
+                    var src = $this.attr('data-big') || $this.attr('src');
+                    var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+                    $this.wrap(a);
+                });
+                if (gallery)
+                    $('a.fancybox').attr('rel', 'fancyboxgallery');
+                $('a.fancybox').fancybox({
+                    titlePosition: titlePosition
+                });
+            });
+            $.noConflict();
+        </script>
+        <div id="square"  class="tabcontent">
+            <div class="msquare">  <br> <br>
+                <div class="msquaretxt">
+                    <p class="titles"> The Macedonia Square </p>
+                    Macedonia Square, the main square of Skopje, is located in the city centre and occupies a total of 18,500 square metres.
+                    It was build between 1920 and 1940, but was constantly reconstructed  to create its present day look. It is the main part
+                    of the city where locals as well as tourists like to stop for a break during the day.
+                </div>
+            </div>
+            <div class="rowgallery cc ">
+                <div> <img src="img/landmarks/a1.jpg" />  </div>
+                <div><img src="img/landmarks/a3.jpg" /></div>
+                <div><img src="img/landmarks/a2.jpg" /></div>
+                <div><img src="img/landmarks/a5.jpg" /></div>
+                <div><img src="img/landmarks/a6.jpg" /></div>
+
+            </div>
+            <br>
+             <p class="info">
+                 The three main streets that merge onto the square are Maksim Gorki, Dimitar Vlahov and Street Macedonia.
+                Dimitar Vlahov Street was converted into a pedestrian street in 2011. Maksim Gorki, while not a pedestrian zone,
+                is lined with Japanese Cherry trees, whose blossoms in spring mark a week-long series of Asian cultural events.
+                Finally, Macedonia Street, the main pedestrian street, connects Macedonia Square to the Old Railway Station.
+                Nearby, statues of former rulers and saints seem to be crammed by the
+                 dozen into all available spaces, along with the city’s own arc de triomphe. </p> <br>
+            <div id="street-view"></div>
+
+
+
+                 <script async defer
+                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWXytljS6pnz1RckKZs4VI5Br-uIwYQ6k&callback=initialize">
+                 </script>
+
+
+
+            <p class="info">
+                 The statue and fountain "Warrior on a horse"
+                is probably the most symbolic one for Skopje as a part of the reconstruction project called "Skopje 2014".
+                It is typically thought to depict Alexander the Great, though it is not officially named after him.
+                The bronze sculpture is the tallest one on the Balkan peninsula [14.5 m]  and consists of three large ivory sections, each separated by a thinner bronze ring.
+                The column stands in a fountain. At the base of the column are 8 bronze soldiers, 8 bronze lions,
+                around the edges of the fountain pool, four of which act as part of the fountain,
+                releasing water from their mouths.
+            </p><br>
+
+
+             <div class="rowgallery cc ">
+                <div><img src="img/landmarks/p1.jpg" /></div>
+                <div><img src="img/landmarks/p3.jpg" /></div>
+                <div><img src="img/landmarks/p2.jpg" /></div>
+
+                <div><img src="img/landmarks/p5.jpg" /></div>
+                <div><img src="img/landmarks/p6.jpg" /></div>
+
+            </div>
+
+            <video class="indexvideo" autoplay controls muted>
+                <source src="vid/Drone%20Flight%20March%202017.mp4" type="video/mp4"Your browser does not support the video tag.>
+            </video>
+
+<br>
+            <div class="info">
+                <p class="titles"> <br><br>The Stone Bridge </p>
+                <br>
+                The Stone Bridge is a bridge across the Vardar River, which connects Macedonia Square to the Old Bazaar.
+                The bridge is considered a symbol of Skopje and is the main element of the coat of arms of the city,
+                which in turn is incorporated in the city's flag. The Stone Bridge is built of solid stone blocks and is supported by
+                firm columns that are connected with 12 semicircular arcs. The bridge is 214 m (702 ft) long and 6 m (20 ft) wide.
+                 The current Stone Bridge was built on Roman foundations under the patronage
+                of Sultan Mehmed II the Conqueror between 1451 and 1469. Throughout the centuries, the Stone Bridge was often damaged and
+                then repaired. The last reconstruction of the bridge began in 1994.
+                The watchtower shaped like a mihrab was reconstructed in 2008.
+Some executions have also taken place on this bridge, such as the execution of Karposh in 1689.
+            </div><br>
+            <div class="rowgallery cc ">
+                <div><img src="img/landmarks/s1.jpg" /></div>
+                <div><img src="img/landmarks/s3.jpg" /></div>
+                <div><img src="img/landmarks/s2.jpg" /></div>
+                <div><img src="img/landmarks/s4.jpg" /></div>
+                <div><img src="img/landmarks/s6.jpg" /></div>
+
+            </div>
+
+            <hr> <br>
+
+
+            <div class="info">
+                <p class="titles"> The Art Bridge </p> <br>
+                The Art Bridge is a pedestrian bridge across the Vardar River which features many statues of noted Macedonian artists and musicians.
+                It was built as part of the larger Skopje 2014 project, with an estimated construction cost of €2.5 million. The bridge includes
+                29 sculptures, with 14 at each side and one in the centre. It is 83 metres (272.3 feet) in length and 9.2 m (30.2 ft) in width,
+                while the central part of the bridge is 12 m (39.4 ft) wide.
+            </div><br>
+            <div class="rowgallery cc ">
+                <div><img src="img/landmarks/art1.jpg" /></div>
+                <div><img src="img/landmarks/art3.jpg" /></div>
+                <div><img src="img/landmarks/art2.jpg" /></div>
+                <div><img src="img/landmarks/art4.jpg" /></div>
+                <div><img src="img/landmarks/art5.jpg" /></div>
+
+
+            </div>
+
+            <hr> <br>
+
+            <div class="info">
+                <p class="titles"> The Memorial house of Mother Teresa </p><br>
+                The memorial house was built on the popular Macedonia Street in the Centar municipality, on the very location of the once
+                Sacred Heart of Jesus Roman Catholic Church, where Mother Teresa was baptized.It is a modern, transformed version of Mother
+                Teresa's birth house with a multifunctional but sacral character. Inside the house, part of her relics are preserved, which were
+                transferred to Skopje with support of the Roman Catholic Church of Skopje. There is a museum which includes realistic sculptures
+                of Mother Teresa and members of her family. One sculpture shows Mother Teresa as a ten-year-old child, sitting on a stone and
+                holding a pigeon in her hands. The house also hosts cultural exhibits and includes a gallery.
+            </div> <br>
+            <div class="rowgallery cc ">
+                <div><img src="img/landmarks/mt1.jpg" /></div>
+
+                <div><img src="img/landmarks/mt3.jpg" /></div>
+                <div><img src="img/landmarks/mt4.jpg" /></div>
+                <div><img src="img/landmarks/mt5.jpg" /></div>
+                <div><img src="img/landmarks/mt6.jpg" /></div>
+
+            </div>
+
+<hr> <br>
+
+
+
+
+
+
+        </div>
+
+        <div id="bazaar"  class="tabcontent" >
+        <div class="bazaar">  <br> <br>
+            <div class="bazaartxt">
+                <p class="titles"> The Old Bazaar </p>
+                The Old Bazaar is situated on the eastern bank of the Vardar River, stretching from the Stone Bridge to the Bit-Pazar and from the Skopje
+                Fortress to the Serava river. As one of the oldest and largest marketplaces in the Balkans, it has been Skopje's centre for trade
+                and commerce since at least the 12th century.
+            </div>
+        </div>
+        <div class="rowgallery cc ">
+            <div><img src="img/landmarks/o1.jpg" title="oldtown" /></div>
+
+            <div><img src="img/landmarks/o3.jpg" /></div>
+            <div><img src="img/landmarks/o4.jpg" /></div>
+            <div><img src="img/landmarks/o5.jpg" /></div>
+            <div><img src="img/landmarks/o6.jpg" /></div>
+
+        </div>
+            <br>
+            <p class="info">
+                Beside its importance as a market place the Old Bazaar is known for its cultural and historical values. Although Ottoman architecture is predominant, remains of Byzantine architecture are evident as well, while recent reconstructions have led to the application of elements specific to modern architecture. The Old Bazaar still is home to several active mosques, türbes, two churches and a clocktower, that, together with the buildings of the Museum of Macedonia and the Museum of Modern Art, form the core of the modern bazaar.
+            </p>
+
+<br>
+
+            <div class="parallax"> </div>
+
+            <br>
+            <video class="bazaarvid"  controls  poster="img/bazaar.jpg">
+                <source src="vid/old%20bazaar.mp4" type="video/mp4"Your browser does not support the video tag.>
+
+            </video>
+            <video class="bazaarvid"  controls  poster="img/kurshumli.jpg">
+                <source src="vid/kurshumli%20an.mp4" type="video/mp4"Your browser does not support the video tag.>
+
+            </video>
+            <div>
+
+
+
+               <span class="museum" >
+<span class="museumtitle"> Çifte Hamam </span>
+<a class="fancybox" href="img/landmarks/2.jpg">
+ <img src="img/landmarks/2.jpg" class="museumimg" ></a>
+<span class="museump">The Çifte Hamam (Turkish for 'double bath'), located in the centre of the old bazaar, was built in the
+    15th century under Isa Bey. The building is divided into two wings (hence the name 'double'): one for men and one for women.
+    The layout of both sections are nearly identical. It was used as a bathhouse until 1915. After suffering damages
+    during the 1963 earthquake, it was repaired and has housed the Contemporary Art Gallery since then.
+
+ </span>
+</span>
+
+
+
+            <span class="museum" >
+<span class="museumtitle"> Daut Pasha Hamam </span>
+<a class="fancybox" href="img/landmarks/3.jpg">
+    <img src="img/landmarks/3.jpg" class="museumimg" > </a>
+<span class="museump">Daut Pasha, Grand Vesir of East Rumelia, constructed this hamam in the 15th century. It is one of the most famous monuments of the Islamic profane architecture in Macedonia.
+
+The building consists of
+    fifteen rooms covered by thirteen domes. The two largest domes covered the two changing rooms and the rest of the domes covered
+    individual bathing rooms.Since 1948, the Daut Paşa Hamam has housed the National Art Gallery.
+</span>
+
+ </span>
+
+            <span class="museum" >
+
+<span class="museumtitle">The Clock Tower </span>
+<a class="fancybox" href="img/landmarks/1.jpg">
+    <img src="img/landmarks/1.jpg" class="museumimg" > </a>
+<span class="museump">In the yard north of Hjunkjar Mosque of Sultan Murat II, rises a six sided clock tower, built in the 16th century.
+The traveler writers Evliya Çelebi and Haji Kalfa mention it in their writings - that it was basically hexagonal, and its upper part
+    was wooden construction, which in 1904 was replaced with a solid material.
+In 1963, after the Skopje earthquake, the clock tower was brought to the
+    original state, but without the clock mechanism.
+
+
+</span>
+
+        </div>
+
+        <div>
+               <span class="museum" >
+<span class="museumtitle"> Kapan Han </span>
+<a class="fancybox" href="img/landmarks/4.jpg">
+    <img src="img/landmarks/4.jpg" class="museumimg" > </a>
+<span class="museump">Kapan Han is a han (caravanserai) in the Old Bazaar of Skopje, Macedonia. It was built in the mid-15th
+    century by Bosnian general Isa-Beg Isaković, ruler of Skopsko Krajište, in order to provide a regular source of income for his endowment.
+    The Kapan Han has a surface area of 1,086 m². The building has two entrances, a ground level and second level. There were 44 rooms for
+    guests and traders with their caravans.
+
+
+ </span>
+</span>
+
+
+
+            <span class="museum" >
+<span class="museumtitle">Suli Han </span>
+<a class="fancybox" href="img/landmarks/6.jpg">
+    <img src="img/landmarks/6.jpg" class="museumimg" > </a>
+<span class="museump">The Suli Han was built under Ishak Bey in the 15th century. The total area is around 2.100m², with two floors,
+    the upper having 54 guest rooms and the lower for the guests' cattle. During the Ottoman Empire,
+    it was a classic city han for travelers and traders' caravans.
+    It was fully repaired after sustaining heavy damage during the 1963 earthquake.
+    Today, the building houses the Skopje Faculty of Arts and the Museum of the Old Bazaar.
+</span>
+
+ </span>
+
+            <span class="museum" >
+<span class="museumtitle">Kurşumli Han </span>
+<a class="fancybox" href="img/landmarks/5.jpg">
+    <img src="img/landmarks/5.jpg" class="museumimg" > </a>
+<span class="museump">The Kurşumli Han  was built by Musein Odza,
+     in the 16th century.
+    The roof of the inn was once covered in lead, but was removed during World War I. The Kurşumli Han also has several
+    small pyramidically-shaped domes. The attached mosque, built in the 17th century, and most of the hamam, built in the 15th century, were destroyed
+    in the 1963 earthquake. Today, it houses the statue collection of the Museum of Macedonia.
+
+
+</span>
+            </span> </div>
+
+
+
+    </div>
+        <br>
+        <div id="kale" class="tabcontent">
+            <div class="kalef">  <br> <br>
+            <div class="kaleftxt">
+                <p class="titles"> The Kale Fortress </p>
+                The Skopje Fortress, commonly referred to as Kale,
+                is a historic fortress in the old town, situated on the highest point in the
+                city.
+                Thought to have been built in the 6th century AD, Skopje’s fortress is its most famous symbol, also
+                depicted on the city's coat of arms.
+
+            </div>
+        </div>
+
+            <br>
+
+
+            <div>
+          <span class="kaleslika">    <a class="fancybox" href="img/landmarks/kale1.jpg">
+              <img class="kaleslika" src="img/landmarks/kale1.jpg"> </a>
+          </span>
+            <span class="kaletxt">
+Scholars believe that the fortress was constructed under the orders of Byzantine Emperor Justinian I, who had been born in the nearby city of Tauresium.
+          At the beginning of XX century until 1953 the fortress had a military-strategic function. Therefore, at the bottom
+                of the hill were built 15 shelters. In 1953 the army was moved and the fortress lost its military-strategic position
+                in topographical terms, but this feature continues to exist regarding the shelter.
+Skopje fortress "Kale" has two defensive belts and built structures out of the defensive belts in which fits an enclosed
+                wall i.e. "Water Tower". The interior has remains of several buildings from different periods.
+
+
+ </span>
+            <span class="kaleslika">    <a class="fancybox" href="img/landmarks/kale2.jpg">
+                <img class="kaleslika" src="img/landmarks/kale2.jpg"></a> </span>
+            <video  class="kalevid" autoplay muted loop="loop">
+                <source src="vid/kale.mp4"  type="video/mp4">Your browser does not support the video tag.
+            </video>
+            </div>
+             <br>
+            <div class="aq"><br><br>
+              <div class="aqinfo">
+
+               <p class="titles"> The Skopje Aqueduct</p>
+The Skopje Aqueduct, located north of the city center, is the largest of the three preserved buildings of its kind on the Balkan Peninsula.
+                  Assumptions about the time of construction is moving in a time frame of the first half of VI century
+                  (the Byzantine emperor Jusitinajan) to the XVI century (when in Skopje were built nearly all
+                  baths and the city had a constant need for large water supply). It is assumed it was still in use at the end of XIX century.
+
+The lower part of the Aqueduct consists of 53 square or rectangular pillars and 2 lateral ramps -
+                  north and south, with their foundations.The frontal walls are of mixed masonry, stone and brick in lime mortar,
+                  with archivoltes and external arches of brick. The façade screens on both sides end up with a chain of brick,
+                  over which there is a longitudinal walling also of mixed masonry.
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </section>
+</body>
+</html>

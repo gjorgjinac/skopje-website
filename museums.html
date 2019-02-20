@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Museums</title>
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css"/>
+
+
+    <link rel="stylesheet" href="style.css" >
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
+    <script type="text/javascript">
+        $(function($){
+            var addToAll = false;
+            var gallery = true;
+            var titlePosition = 'inside';
+            $(addToAll ? 'img' : 'img.fancybox').each(function(){
+                var $this = $(this);
+                var title = $this.attr('title');
+                var src = $this.attr('data-big') || $this.attr('src');
+                var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+                $this.wrap(a);
+            });
+            if (gallery)
+                $('a.fancybox').attr('rel', 'fancyboxgallery');
+            $('a.fancybox').fancybox({
+                titlePosition: titlePosition
+            });
+        });
+        $.noConflict();
+    </script>
+
+</head>
+<body>
+
+
+<header>
+
+</header>
+<br>
+
+<div class="content">
+
+
+
+
+    <aside>
+
+        <nav >
+
+            <a href="index.html"> <img class="menuitem" src="img/menu8.png" alt="Home"> </a>
+            <a href="hotels.html">  <img class="menuitem" src="img/menu3.png" alt="Hotels"> </a>
+            <a href="eating_out.html"> <img class="menuitem" src="img/menu6.png" alt="Eating out" > </a>
+
+            <div class="dropdown">
+                <span>
+                    <a href="explore.html">    <img class="menuitem" src="img/menussss.png" alt="Explore" > </a>
+                </span>
+                <div class="dropdown-content">
+                    <a href="landmarks.html"> <img class="menuitem" src="img/menu0.png" alt="City centre"> </a>
+                    <a href="temples.html">  <img class="menuitem" src="img/menu2.png" alt = "Temples"> </a>
+                    <a href="theaters.html"> <img class="menuitem" src="img/menu4.png" alt="Theaters" > </a>
+                     <img class="menuitem" src="img/menu11.png" alt="Museums" >
+                    <a href="nature.html"> <img class="menuitem" src="img/menu7.png" alt="Outings"> </a>
+                    <a href="shopping.html"> <img class="menuitem" src="img/menu5.png" alt="Shopping" > </a>
+                </div>
+            </div>
+
+
+
+        </nav>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1SyWiOSK7lXGvEM0XhpYC9EIUz4E" class="sidebarmap"></iframe>
+        <!-- weather widget start --><a target="_blank" href="http://www.booked.net/weather/skopje-3000">
+        <img class="weather" src="https://w.bookcdn.com/weather/picture/4_3000_1_1_3c3b3b_200_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=w
+        209&anc_id=36854"  alt="booked.net"/></a><!-- weather widget end -->
+    </aside>
+
+<section class="txt2">
+
+<span class="museum" >
+    <span class="museumtitle"> <a href="http://mmb.org.mk/index.php/mk/"> Museum of Macedonian Struggle  </span>
+
+    <a class="fancybox" href="img/museum1.jpg"> <img src="img/museum1.jpg" class="museumimg" > </a></a>
+<span class="museump">The Museum is located between the Museum of Archaeology, the Stone Bridge and the Vardar River. The construction
+    of the museum began on 11 June 2008 and it was opened to the public on the 20th anniversary of the declaration of independence on September 8th, 2011.  The
+    exhibit covers the period from the beginning of the resistance movement against the Ottoman rule, until the declaration of independence from Yugoslavia on
+    8 September 1991. The guided tours take visitors through 13 exhibits ending in front of the original copy of the 1991 Declaration of Independence.</span>
+
+
+
+ </span>
+
+
+
+
+        <span class="museum" > <a href="http://amm.org.mk/" >
+<span class="museumtitle"> The Archaeological Museum </span>
+
+            <a class="fancybox" href="img/museum3.jpg"> <img src="img/museum3.jpg" class="museumimg" ></a> </a>
+<span class="museump">In October 2014 in Skopje, the new Archaeological Museum was officially
+    opened as a national institution form the highest rank in the protecting and presenting the
+    cultural heritage of the Republic of Macedonia.  More than 6,000 artifacts from all historical
+    periods, from prehistory until the Middle Ages are presented to the public on three floors and an
+    area of 6,000 square meters.  Besides the rich
+    archaeological exhibition, the museum also features glass cabinets, 15 wax figures, 83 paintings,
+    video-animations, ambient situations, and mosaics of the valuable cultural heritage.
+
+</span>
+
+
+ </span>
+
+        <span class="museum" > <a href="https://www.lonelyplanet.com/macedonia/skopje/attractions/museum-of-contemporary-art/a/poi-sig/1251893/360132">
+
+
+<span class="museumtitle">Museum of Contemporary Art </span>
+
+            <a class="fancybox" href="img/museum5.jpg"> <img src="img/museum5.jpg" class="museumimg" ></a> </a>
+<span class="museump">The Contemporary Art Museum of Macedonia museum was founded in 1963 following the disastrous
+    earthquake that hit the city. The larger part of the collection marks the art movements of 1950 - 1970,
+    although it also contains  works of the early modern art. The older exhibits are mainly highlighted by works of Emil Filla,
+    Fernand Léger, and André Masson. The works of the internationally
+    well-known artists are of special importance, such as Pablo Picasso, Hans Hartung, Victor Vasarely,
+    Pierre Soulages, Alberto Burri, Christo, Zoltan Kemeny, Robert Adams,
+    Emilio Vedova, Antoni Clavé, and Georg Baselitz.
+
+
+</span>
+
+        </span>
+
+
+    <span class="museum" >
+        <a href="https://www.myguidemacedonia.com/culture/natural-science-museum">
+<span class="museumtitle"> Museum of Natural Sciences  </span>
+
+            <a class="fancybox" href="img/museum7.jpg"> <img src="img/museum7.jpg" class="museumimg" ></a> </a>
+<span class="museump"> The Macedonian Museum of Natural Sciences, founded in October 1926,
+    collects, studies and displays the natural heritage of Macedonia.
+
+ The Museum's collections total more than 270,000
+    specimens of rocks, minerals, fossils, plants, fungi and animals from Macedonia, and
+    cover an area of 1700 m2.
+Through numerous scientific projects, the Museum undertook numerous studies of the fossil and recent
+    fauna of Macedonia. The Museum continuously cooperates with various
+    similar institutions at national and international level.
+
+
+
+</span>
+        </span>
+
+        <span class="museum" >
+            <a href="http://www.exploringmacedonia.com/museum-of-macedonia.nspx">
+<span class="museumtitle"> The Museum of Macedonia  </span>
+
+                <a class="fancybox" href="img/museum2.jpg"> <img src="img/museum2.jpg" class="museumimg" ></a> </a>
+<span class="museump">The Museum of Macedonia is one of the oldest museums in the country, created by joining the archeological,
+    historical and ethnological museums. The archaeological, the oldest one, was opened in 1924
+    and that date is considered as an establishing date of the national museum. It is located in the Old Bazaar in Skopje,
+    near the Kale Fortress. It has a total area of 10.000 m², of which 6000 m² are meant for permanent or temporal exhibitions.
+    Within the museum is the Kuršumli An, a historical monument that was built in the 16th century.
+
+
+</span>
+        </span>
+
+
+        <span class="museum" >
+            <a href="http://www.exploringmacedonia.com/museum-of-the-city-of-skopje.nspx">
+<span class="museumtitle"> Museum of the City of Skopje   </span>
+
+                <a class="fancybox" href="img/museum6.jpg"> <img src="img/museum6.jpg" class="museumimg" ></a> </a>
+<span class="museump">The Museum of the City of Skopje, founded in 1948, functions as a
+    complex that embodies the fields of archeology, history, ethnology, art history and the contemporary art in
+    the region of the city of Skopje.  The clock is frozen at 5.17 on the morning of the tragic Skopje earthquake of 27
+    July 1963, which killed 1066 people and almost demolished the city. The museum is home to permanent еxhibitions
+    representing the history of Skopje, divided into four departments: archaeology, ethnology, history and art history.
+
+
+</span>
+        </span>
+
+        <span class="museum" >
+            <a href="http://holocaustfund.org/?lang=en">
+<span class="museumtitle"> The Holocaust Museum </span>
+
+                <a class="fancybox" href="img/museum4.jpg"> <img src="img/museum4.jpg" class="museumimg" ></a> </a>
+<span class="museump">A memorial to the holocaust of the 7,148 Jews from Macedonia and the history of the
+    Jews in the Balkans. The Holocaust Memorial Center for the Jews of Macedonia was officially opened
+    on 10 March 2011, exactly 68 years after the German Forces deported the Macedonian Jews to the
+    Treblinka extermination camp.
+
+</span>
+
+
+
+ </span>
+
+        <span class="museum" >
+<span class="museumtitle"> Museum of Skopje's Old Bazaar</span>
+
+            <a class="fancybox" href="img/museum8.jpg"> <img src="img/museum8.jpg" class="museumimg" > </a>
+<span class="museump">On the first floor of a 15-th century inn, the
+    museum is an essential stop for insight into Skopje's importance as a former trade
+    town. Using old photographs and maps, it shows the extent of the bazaar, which
+    once stretched to the river Vardar. The objects show
+    the wealth of the manufactured products.
+
+</span>
+ </span>
+
+        <span class="museum" >
+<span class="museumtitle"> Military Museum of Macedonia</span>
+
+           <a class="fancybox" href="img/museum9.jpg"> <img src="img/museum9.jpg" class="museumimg" > </a>
+<span class="museump">The Military Museum of Macedonia was established
+    in 2006 as the first specialized national museum of military history of Macedonia,
+    which manifests its struggle for
+    freedom and gaining state independence. The museum discovers, collects, and
+    preserves authentic military items and organizes their exibition.
+
+</span>
+
+
+
+ </span>
+
+        </span>
+
+</section>
+
+
+</body>
+</html>

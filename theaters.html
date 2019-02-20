@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Theaters</title>
+    <script src="js.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="engine8/style.css" />
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css" >
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css"/>
+
+    <script type="text/javascript">
+        $(function($){
+            var addToAll = false;
+            var gallery = true;
+            var titlePosition = 'inside';
+            $(addToAll ? 'img' : 'img.fancybox').each(function(){
+                var $this = $(this);
+                var title = $this.attr('title');
+                var src = $this.attr('data-big') || $this.attr('src');
+                var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+                $this.wrap(a);
+            });
+            if (gallery)
+                $('a.fancybox').attr('rel', 'fancyboxgallery');
+            $('a.fancybox').fancybox({
+                titlePosition: titlePosition
+            });
+        });
+        $.noConflict();
+    </script>
+</head>
+<body>
+
+<header>
+
+</header>
+<br>
+
+<div class="content">
+
+
+
+
+    <aside>
+
+        <nav >
+
+            <a href="index.html"> <img class="menuitem" src="img/menu8.png" alt="Home"> </a>
+            <a href="hotels.html">  <img class="menuitem" src="img/menu3.png" alt="Hotels"> </a>
+            <a href="eating_out.html"> <img class="menuitem" src="img/menu6.png" alt="Eating out" > </a>
+
+            <div class="dropdown">
+                <span>
+                    <a href="explore.html">    <img class="menuitem" src="img/menussss.png" alt="Explore" > </a>
+                </span>
+                <div class="dropdown-content">
+                    <a href="landmarks.html"> <img class="menuitem" src="img/menu0.png" alt="City centre"> </a>
+                    <a href="temples.html">  <img class="menuitem" src="img/menu2.png" alt = "Temples"> </a>
+                     <img class="menuitem" src="img/menu44.png" alt="Theaters" >
+                    <a href="museums.html">  <img class="menuitem" src="img/menu1.png" alt="Museums" > </a>
+                    <a href="nature.html"> <img class="menuitem" src="img/menu7.png" alt="Nature"> </a>
+                    <a href="shopping.html"> <img class="menuitem" src="img/menu5.png" alt="Shopping" > </a>
+                </div>
+            </div>
+
+
+
+        </nav>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1xtGaWQvlGbm_pjHYAcTidKXnvs0" class="sidebarmap"></iframe>
+        <!-- weather widget start --><a target="_blank" href="http://www.booked.net/weather/skopje-3000">
+        <img class="weather" src="https://w.bookcdn.com/weather/picture/4_3000_1_1_3c3b3b_200_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=w
+        209&anc_id=36854"  alt="booked.net"/></a><!-- weather widget end -->
+    </aside>
+
+    <section class="txt2">
+
+         <div class="tab">
+   <a href="" >   <button class="tablinks"  >  All</button></a>
+  <button class="tablinks"  onclick="openCity(event, 'theatre')"> Drama theaters</button>
+  <button class="tablinks" onclick="openCity(event, 'ballet')">Opera & Ballet</button>
+  <button class="tablinks" onclick="openCity(event, 'cinemas')">Cinemas</button>
+
+
+</div>
+
+<div id="ballet" class="tabcontent">
+
+    <div id="balerina">
+    <div class="half"> </div>
+    <div class="half">
+
+        <span class="titled" > <a href="http://mob.mk/"> Macedonian Opera and Ballet</a></span>
+ <br>
+        <br> Address: Goce Delchev 4
+        <br> Phone: 	+389 (02) 3118 – 451 <br> <br>
+
+
+
+
+ <ul > <b> This year's operas:</b>
+     <li> Giuseppe Verdi - La Traviata </li>
+     <li> W.A. Mozart - Don Giovanni </li>
+     <li> Gioachino Rossini - The Barber of Seville </li>
+     <li>Upcoming: W.A.Mozart - Requiem [June 24, 9PM] </li>
+ </ul><br>
+        <ul> <b>This year's ballets: </b>
+     <li> Pyotr Ilyich Tchaikovsky - Swan Lake </li>
+     <li> Vasily Medvedev - Cleopatra </li>
+     <li> Pyotr Ilyich Tchaikovsky - The Nutcracker </li>
+    <li> J.S.Bach - On the Road </li>
+    <li> Upcoming: La,la,la [July 1, 9PM] </li>
+</ul>
+    </div></div>
+
+        <video width="985px"  controls>
+            <source src="vid/bann.mp4"  type="video/mp4">Your browser does not support the video tag.
+        </video>
+    <div class="desc"> 'Cleopatra' - Vasily Medvedev Trailer</div>
+ <div class="balletvidcontainer" >
+     <video  controls>
+  <source src="vid/new%20year%20concert.mp4" class="balletvid" type="video/mp4">Your browser does not support the video tag.
+     </video>
+
+     <video  controls>
+         <source src="vid/tra.mp4" class="balletvid" type="video/mp4">Your browser does not support the video tag.
+     </video>
+     <div class="deschalf"> 2015 New Year's Eve concert opening </div>
+
+    <div class="deschalf"> Die Fledermaus, ( German: “The Bat”) operetta by Johann Strauss the Younger </div>
+</div>
+    </div>
+<div id="theatre"  class="tabcontent">
+
+    <!--
+         <img class="mySlides w3-animate-fading" src="img/national-theatre1.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="img/national-theatre2.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="img/national-theatre3.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="img/national-theatre4.jpg" style="width:100%">
+
+                <script>
+                    var myIndex = 0;
+                    carousel();
+    </script> -->
+
+                    <iframe src="http://www.mnt.com.mk/virtual-tour/MNTtour.html" id="mnttour"></iframe>
+    <div class ="desc"> Virtual tour of the theatre, courtesy of <a href="http://www.mnt.com.mk">MNT</a>. </div>
+    <div class="mnt" ><a href="http://www.mnt.com.mk">The Macedonian National Theatre</a>  </div>
+
+   <div class="theatreinfo">
+       Address: Iljo Vojvoda <br>
+       Hours: 8AM-8PM [Closed on Sundays] <br>
+       Phone: +389 2 323 0304 <br>
+       The Macedonian National Theatre is the oldest and largest theatre in Republic of Macedonia founded in 1945. Since its founding,
+    the theatre team has staged nearly 300 premieres and the theatre troupe has given over 8,000 performances. It is aiming to establish
+    and profile its own repertoire as well as aesthetic concepts by which it shall distinguish itself from the other theatres in Macedonia
+       and at the same time promote itself as a national theatre institution. </div>
+    <div> <a class="fancybox" href="img/theatre/mnt1.jpg"> <img class="mntimg" src="img/theatre/mnt1.jpg">  </a>
+
+        <a class="fancybox" href="img/theatre/mnt2.jpg">   <img class="mntimg" src="img/theatre/mnt2.jpg"> </a> </div>
+    <div class="theatreinfo">
+        The new building is situated on the left bank of the river Vardar and has been constructed on the foundation of the old theater which was
+        destroyed in the 1963. The building, covering 7,200 sq m. is designed in many ways to resemble the one that crumbled away in the
+        earthquake. The large auditorium, include parterre (ground level and two galleries-balconies) with a capacity of 724 seats and the small one with
+        around 213. It's also equipped with an up-to-date scene technology, which is a must for such institutions. The theater is luxuriously decorated,
+        with glided ornaments inside and outside and statues on the roof. The new building which meets the highest standards for construction of such
+        institutions, offers possibility for nourishing the art, culture and realizing high-quality performances.
+
+</div>
+    <hr>
+    <div class="mnt" > <a href="http://www.puppet.com.mk"> Children's and Youth Theater </a> </div>
+    <div class="theatreinfo">
+    Address: Mitropolit Teodosij Gologanov 4 <br>
+
+    Phone: +389 2 313 6185 <br>
+    </div>
+
+    <a class="fancybox" href="img/theatre/1_1.jpg">  <img src="img/theatre/1_1.jpg" class="puppetimg" /> </a>
+    <a class="fancybox" href="img/theatre/1_2.jpg">  <img src="img/theatre/1_2.jpg" class="puppetimg"/> </a>
+    <a class="fancybox" href="img/theatre/1_3.jpg">   <img src="img/theatre/1_3.jpg"class="puppetimg" /> </a>
+    <a class="fancybox" href="img/theatre/1_4.jpg">    <img src="img/theatre/1_4.jpg"class="puppetimg" /> </a>
+    <a class="fancybox" href="img/theatre/1_5.jpg">    <img src="img/theatre/1_5.jpg"class="puppetimg" /> </a>
+    <a class="fancybox" href="img/theatre/1_7.jpg"><img src="img/theatre/1_7.jpg"class="puppetimg" /> </a>
+    <a class="fancybox" href="img/theatre/1_6.jpg"><img src="img/theatre/1_6.jpg"class="puppetimg" /> </a>
+    <a class="fancybox" href="img/theatre/1_8.jpg"><img src="img/theatre/1_8.jpg"class="puppetimg" /> </a>
+<hr>
+    <div class="mnt" > <a href="http://www.dramskiteatar.com.mk/?lang=ang&menu=zanas&podmenu=-1"> Drama Theater</a> </div>
+    <div class="theatreinfo">
+        Address: Šekspirova 15<br>
+
+        Phone: +389 2 306 3453 <br>
+       The Drama Theatre in Skopje is one of the oldest theatre institutions in the country. The beginnings date back to 21.04.1946 with the first puppet show "Siljan Strkot" ("Siljan the Stork") based on the folk story,
+        while as an independent Puppet Theater it operates since 1949.
+    </div>
+    <a class="fancybox" href="img/theatre/2_1.jpg"> <img src="img/theatre/2_1.jpg" class="puppetimg" /> </a>
+    <a class="fancybox" href="img/theatre/2_2.jpg"> <img src="img/theatre/2_2.jpg" class="puppetimg"/> </a>
+    <a class="fancybox" href="img/theatre/2_3.jpg"> <img src="img/theatre/2_3.jpg"class="puppetimg" /> </a>
+    <a class="fancybox" href="img/theatre/2_4.jpg"> <img src="img/theatre/2_4.jpg"class="puppetimg" /> </a>
+<hr>
+    <div class="mnt" > <a href="http://www.dramskiteatar.com.mk/?lang=ang&menu=zanas&podmenu=-1"> Theatre Komedija</a> </div>
+    <div class="theatreinfo">
+        Address: Boulevard Saint Clement of Ohrid bb<br>
+ Phone:  +389 71 365 034 <br>
+
+    </div>
+    <a class="fancybox" href="img/theatre/3_1.jpg"> <img src="img/theatre/3_1.jpg" class="puppetimg" /> </a>
+    <a class="fancybox" href="img/theatre/3_2.jpg"><img src="img/theatre/3_2.jpg" class="puppetimg"/> </a>
+    <a class="fancybox" href="img/theatre/3_3.jpg"> <img src="img/theatre/3_3.jpg"class="puppetimg" /> </a>
+    <a class="fancybox" href="img/theatre/3_4.jpg"> <img src="img/theatre/3_4.jpg"class="puppetimg" /> </a>
+    <hr>
+</div>
+        <div id="cinemas"  class="tabcontent">
+  <span class="cinema" > <a href="http://www.cineplexx.mk" >
+      <p class="titles"> Cineplexx </p>
+<img src="img/cinema1.jpg" class="cinemaimg" ></a>
+      <span class="cinemainfo">
+     <br> Address: Manapo [Skopje City Mall]
+     <br> Phone:  +389 2 307 4477
+</span>
+
+  </span>
+
+
+            <span class="cinema" ><a href="http://www.kinomilenium.mk/" >
+                <p class="titles"> Milenium </p>
+<img src="img/cinema2.jpg" class="cinemaimg" ></a>
+     <span class="cinemainfo">
+     <br> Address: Dame Gruev bb
+     <br> Phone: +389 2 312 0389
+</span>
+ </span>
+            <span class="cinema" > <a href="https://www.facebook.com/kinosens7DVero/" >
+                <p class="titles"> Kinosens 7D </p>
+<img src="img/cinema3.jpg" class="cinemaimg" ></a>
+         <span class="cinemainfo">
+     <br> Address: Bl. Kuzman Josifovski Pitu
+     <br> Phone: +389 2 312 0389
+</span>
+
+  </span>
+
+        </div>
+</body>
+</html>
